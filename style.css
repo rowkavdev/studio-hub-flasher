@@ -1,0 +1,12 @@
+:root { color-scheme: dark; font: 1rem/1.55 system-ui, sans-serif; background: #111820; color: #e5eef4; }
+main { max-width: 37rem; margin: clamp(2rem, 9vh, 6rem) auto; padding: 0 1.25rem; }
+h1 { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.05; letter-spacing: -.05em; margin-bottom: .45em; }
+section { margin-top: 2rem; padding: 1.5rem; border: 1px solid #3d535f; border-radius: 1rem; background: #192631; }
+label { display: block; font-weight: 650; margin: 1rem 0 .35rem; }
+label:first-child { margin-top: 0; }
+select, button { font: inherit; border-radius: .45rem; padding: .6rem .8rem; }
+select { width: 100%; color: inherit; background: #111820; border: 1px solid #59727d; }
+button { color: #10201e; background: #8ce9d2; border: 0; font-weight: 700; cursor: pointer; }
+a { color: #8ce9d2; }
+.hint, #connection { color: #bbcbd3; }
+[hidden] { display: none !important; }

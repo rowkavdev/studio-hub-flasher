@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Studio Hub Firmware</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10.5.2/dist/web/install-button.js?module"></script>
+  <script type="module" src="installer.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Studio Hub Firmware</h1>
+    <p>Install a development build on the hub’s controller over USB.</p>
+    <section aria-label="Firmware installer">
+      <label for="release">Release</label>
+      <select id="release" disabled></select>
+      <label for="profile">Controller setup</label>
+      <select id="profile" disabled></select>
+      <p id="connection"></p>
+      <p id="status" role="status">Loading releases…</p>
+      <esp-web-install-button hidden>
+        <button slot="activate">Connect and flash</button>
+        <span slot="unsupported">Open this page in desktop Chrome or Edge to flash over USB.</span>
+        <span slot="not-allowed">Open this page over HTTPS to flash over USB.</span>
+      </esp-web-install-button>
+    </section>
+    <p class="hint">Use a USB data cable and close any serial monitor first. If the board won’t connect, hold BOOT, tap RESET, then release BOOT and try again.</p>
+    <a href="https://github.com/rowkavdev/USB-hub/releases">GitHub release notes and downloads</a>
+  </main>
+</body>
+</html>
