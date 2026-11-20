@@ -1,0 +1,24 @@
+{
+  "version": "v0.1.0-dev.1",
+  "commit": "d3f32aef0d7281fa0ac7c5c37987ffb3c6340738",
+  "profiles": [
+    {
+      "id": "prototype",
+      "label": "Waveshare 4.3″ · INA219 prototype",
+      "connection": "Connect to the Waveshare SKU 25948 UART USB jack. Use this for the single-sensor prototype.",
+      "manifest": "firmware/v0.1.0-dev.1/prototype/manifest.json"
+    },
+    {
+      "id": "four_port",
+      "label": "Waveshare 4.3″ · four-port INA226 board",
+      "connection": "Connect to the Waveshare SKU 25948 UART USB jack. Use this with the r08 four-sensor board.",
+      "manifest": "firmware/v0.1.0-dev.1/four_port/manifest.json"
+    },
+    {
+      "id": "c3_bench",
+      "label": "ESP32-C3 SuperMini · bench monitor",
+      "connection": "Connect directly to the SuperMini USB port. This profile uses one INA219.",
+      "manifest": "firmware/v0.1.0-dev.1/c3_bench/manifest.json"
+    }
+  ]
+}
